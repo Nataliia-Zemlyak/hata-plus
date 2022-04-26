@@ -142,7 +142,6 @@ body {
  }
  
  .content {
-    width: 677px;
     height: 193px;
     font-size: 14px;
     line-height: 24px;
@@ -162,10 +161,8 @@ body {
     color: #fd8300;
     font-weight: bold;
  }
- .content hr {
-    width: 713px;
-    height: 1px;
-    background-color: #e4e4ec;
+ .hr {
+    border-top: 1px;
 
 }
 .content h2 {
@@ -192,6 +189,9 @@ body {
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
+}
+.down-menu {
+
 }
 
 
