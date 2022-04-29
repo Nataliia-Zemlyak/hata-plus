@@ -3,16 +3,20 @@ body {
     font-family: "Arial", sans-serif;
     cursor: url(cursor.cur), pointer;
 }
+sup {
+    font-size: 0.6em;
+}
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #e4e4ec;;
+}
 
 .wrapper {
     margin: 0 auto;
     max-width: 960px; 
 }
 
-.top-line {
-    display: flex;
-    justify-content: space-between;
-}
 .header {
     padding: 15.5px 0;
     background-color: #1f1f56;
@@ -20,6 +24,17 @@ body {
 .flex-between {
     display: flex;
     justify-content: space-between;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 28px;
+    row-gap: 28px;
+}
+.column {
+    width: 219px;
+    box-sizing: border-box;
 }
 
 .header ul {
@@ -56,7 +71,10 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-
+.phones,
+.messengers {
+    padding-left: 48px;
+}
 .phones p,
 .messengers p {
     margin: 10px 0;
@@ -74,10 +92,14 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
+    list-style: none;
 
-    }
+}
 .skype {
     text-decoration: none;
+}
+.cta {
+    text-align: right;
 }
 
 
@@ -98,15 +120,12 @@ body {
     color: #fff;
 }
 .proposition {
+    text-align: center;
     background: #292523 url(../img/backround.jpg) center/cover;
-    display: flex;
-    justify-content: center;
     color: #ffffff;
-    padding: 60px 0 40px;
+    padding: 55px 0 35px;
 }
 .proposition p {
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 8px 0;
 
@@ -114,83 +133,169 @@ body {
 .prop-title {
     font-size: 30px;
     letter-spacing: 2px;
-    line-height: 24px;
-    color: #ffffff;
+    text-transform: uppercase;
+    color: #fff;
     font-weight: 700;
-    font: "Roboto Slab";
+    font-family: "Roboto Slab";
 }
-.prop-text {
+p.prop-text {
+    margin: 5px 0;
+    color: #fff;
     font-size: 14px;
     line-height: 24px;
-    color: #ffffff;
-    font: "Arial";
+ }
+
+ .prop-cost   {
+    font-size: 24px;
+    color: #fd8300;
+    font-weight: bold;
+ }
+ .prop-cost span {
+     font-size: 40px;
+ }
+ .main {
+     padding: 35px 0 45px;
+ }
+ .main-info {
+     max-width: 713px;
+
+ }
+ .main-info h1,
+ .main-info h2 {
+    color: #24242b;
+    font-family: "Roboto Slab";
+
+ }
+ .main-info h1 {
+     margin-top: 5px;
+    font-size: 30px;
     
  }
- .proposition span {
-    margin-right: 5px;
-    font-size: 40px;
-    line-height: 24px;
-    color: #fd8300;
-    font-weight: bold;
- }
- .prop-cost   {
-
+ .main-info h2 {
     font-size: 24px;
-    line-height: 24px;
-    color: #fd8300;
-    font-weight: bold;
  }
  
+ .home {
+     margin: 0;
+ }
  .content {
-    height: 193px;
     font-size: 14px;
     line-height: 24px;
     color: #666666;
+
  }
- .content h1 {
-    font-size: 30px;
-    line-height: 24px;
-    color: #24242b;
-    font-weight: 700;
-    font: "Roboto Slab";
- }
- .content a {
+ .main-info a {
     font-size: 14px;
     line-height: 24px;
-    text-decoration: underline;
     color: #fd8300;
     font-weight: bold;
+    transition: all 0.2s ease;  
  }
- .hr {
-    border-top: 1px;
+ .main-info a:hover {
+     text-decoration: none;
+ }
 
-}
-.content h2 {
-    font-size: 24px;
-    line-height: 24px;
-    color: #24242b;
-    font-weight: 700;
-    font: "Roboto Slab";
-}
- .project {
-     margin-left: -40px;
+ .home {
      display: flex;
      justify-content: space-between;
  }
- .project a {
+ .home h3 {
+    margin: 5px 0 0;
+    text-transform: uppercase;
     font-size: 14px;
     line-height: 24px;
     color: #1f1f56;
-    font-weight: bold;
     text-decoration: none;
  }
-.project p { 
-    width: 220px;
+ .home h3 span {
+     text-transform: lowercase;
+ }
+ 
+
+.home p { 
+    font-size: 13px;
+    color: #9999a6;
+}
+
+figure {
+    margin: 0;
+}
+.aside-menu {
+    position: sticky;
+    top: 35px;
+}
+.aside-menu p {
+    margin: 0;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+    background-color: #1f1f56;
+    font:700 16px/1.5em "Roboto Slab";
+}
+.aside-menu ul {
+    padding: 0;
+    margin: 0;
+    background-color: #e4e4ec;
+    list-style: none;
+}
+.aside-menu a {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #aaa;
+    font-size: 14px; 
+    line-height: 24px;
+    color: #25252c;
+    background-color: #e4e4ec;
+    text-decoration: none;
+    border-top: 1px solid #cdcddd;
+    transition: all 0.3s ease;
+}
+.aside-menu a:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.sub-menu a {
+    padding-left: 30px;
+    color: #666;
+}
+.sub-menu a:hover {
+    color: #666;
+    background-color: #cecedd;
+}
+.footer {
+    padding: 30px 0 20px;
+    background-color: #ededf5;
+}
+.footer-menu {
+
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.footer-menu a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+    text-decoration: none;
+}
+.footer-menu a:hover {
+    text-decoration: underline;
+    color:#fd8300;
+}
+
+.coppy {
+    text-align: center;
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
+    height: 45px;
+    background-color: #dcdce6;
 }
-.down-menu {
+.coppy p {
+    margin: 0;
+    padding: 13.5px 0;
 
 }
 
