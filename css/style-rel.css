@@ -12,6 +12,10 @@ hr {
     border-top: 1px solid #e4e4ec;;
 }
 
+a {
+    position: relative;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 960px; 
@@ -66,11 +70,37 @@ hr {
 
 .aic {
     align-items: center;
+
 }
-.social {
-    display: flex;
-    justify-content: flex-end;
+.social a {
+    display: block;
+    background: url(../img/sprite.png) no-repeat;
 }
+a.fb {
+    width: 10px;
+    height: 19px;
+    background-position: -2px 0;
+}
+a.fb:hover {
+    background-position: -2px -22px;
+}
+a.in {
+    width: 19px;
+    height: 19px;
+    background-position: -14px 0;
+}
+a.in:hover {
+    background-position: -14px -22px ;
+}
+a.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -35px 0;
+}
+a.tw:hover {
+background-position: -35px -22px;
+}
+
 .phones,
 .messengers {
     padding-left: 48px;
@@ -88,13 +118,42 @@ hr {
     text-decoration: none;
 }
 
+.tel:before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 2px;
+    width: 16px;
+    height: 17px;
+    background: url(../img/sprite.png) no-repeat -55px 0;
+}
+
 .messengers a {
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
-    list-style: none;
 
 }
+.mail:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 3px;
+    width: 17px;
+    height: 13px;
+    background: url(../img/sprite.png) no-repeat -73px 0;
+}
+.skype:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 1px;
+    width: 18px;
+    height: 19px;
+    background: url(../img/sprite.png) no-repeat -55px -21px;
+}
+
+
 .skype {
     text-decoration: none;
 }
@@ -174,7 +233,48 @@ p.prop-text {
  .main-info h2 {
     font-size: 24px;
  }
+ .content-price h1 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+ }
+ .content-price p {
+    font-size: 14px;
+    color: #666666;
+    font-family: "Arial";
+ }
  
+ .title {
+    
+    border-radius: 3px;
+    background-color: #1f1f56;
+ }
+ .title td {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+ }
+
+ .other-info p {
+    font-size: 13px;
+    
+    color: #666666;
+    font-family: "Arial";
+
+ }
+ .other-info a {
+    font-size: 14px;
+   
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+ }
+
  .home {
      margin: 0;
  }
@@ -211,7 +311,6 @@ p.prop-text {
      text-transform: lowercase;
  }
  
-
 .home p { 
     font-size: 13px;
     color: #9999a6;
