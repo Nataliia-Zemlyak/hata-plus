@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     font-family: "Arial", sans-serif;
@@ -118,11 +130,14 @@ background-position: -35px -22px;
     text-decoration: none;
 }
 
-.tel:before {
+.icon:before {
     content: '';
     position: absolute;
     left: -28px;
     top: 2px;
+}
+
+.tel:before {
     width: 16px;
     height: 17px;
     background: url(../img/sprite.png) no-repeat -55px 0;
@@ -135,22 +150,28 @@ background-position: -35px -22px;
 
 }
 .mail:before {
-    content: '';
-    position: absolute;
-    left: -30px;
-    top: 3px;
     width: 17px;
     height: 13px;
     background: url(../img/sprite.png) no-repeat -73px 0;
 }
+
 .skype:before {
-    content: '';
-    position: absolute;
-    left: -30px;
-    top: 1px;
+   
     width: 18px;
     height: 19px;
     background: url(../img/sprite.png) no-repeat -55px -21px;
+}
+.stick {
+    position: relative;
+}
+.stick:before {
+    content: '';
+    position: absolute;
+    right: -18px;
+    top: 15px;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
 }
 
 
@@ -233,47 +254,44 @@ p.prop-text {
  .main-info h2 {
     font-size: 24px;
  }
- .content-price h1 {
-    font-size: 24px;
-    line-height: 24px;
-    color: #24242b;
-    font-weight: 700;
-    font-family: "Roboto Slab";
- }
- .content-price p {
-    font-size: 14px;
-    color: #666666;
-    font-family: "Arial";
+ .main-price {
+     max-width: 960px;
+
  }
  
- .title {
-    
+ .table-price{
     border-radius: 3px;
-    background-color: #1f1f56;
+    overflow: hidden;
  }
- .title td {
+.table-price table {
+    width: 100%;
+    margin: 25px 0;
+    border-collapse: collapse;
+ }
+ 
+ th, td {
+     
+    padding: 15px 20px;
+    text-align: left;
+}
+ .title th {
     font-size: 14px;
     line-height: 24px;
-    color: #ffffff;
+    color: #fff;
+    background-color: #1f1f56;
     font-weight: 700;
     font-family: "Roboto Slab";
  }
 
- .other-info p {
-    font-size: 13px;
-    
-    color: #666666;
-    font-family: "Arial";
-
- }
- .other-info a {
+ .info-table td {
     font-size: 14px;
-   
-    text-decoration: underline;
-    color: #fd8300;
-    font-weight: bold;
+    line-height: 24px;
+    color: #666;
     font-family: "Arial";
+    background-color: #e4e4ec;
+    
  }
+ 
 
  .home {
      margin: 0;
@@ -283,6 +301,11 @@ p.prop-text {
     line-height: 24px;
     color: #666666;
 
+ }
+ .content-price {
+    font-size: 14px;
+    color: #666666;
+    font-family: "Arial";
  }
  .main-info a {
     font-size: 14px;
@@ -296,8 +319,21 @@ p.prop-text {
  }
 
  .home {
+     position: relative;
+     margin: 0;
      display: flex;
      justify-content: space-between;
+ }
+ .home a {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+ }
+ .home a:hover ~ h3 {
+     text-decoration: underline;
+
  }
  .home h3 {
     margin: 5px 0 0;
@@ -322,12 +358,18 @@ figure {
 .aside-menu {
     position: sticky;
     top: 35px;
+    border-radius: 3px;
+    overflow: hidden;
 }
+
+.sidebar {
+    min-width: 219px;
+}
+
 .aside-menu p {
     margin: 0;
     padding: 10px 15px;
     color: #fff;
-    border-radius: 3px 3px 0 0;
     background-color: #1f1f56;
     font:700 16px/1.5em "Roboto Slab";
 }
@@ -346,12 +388,41 @@ figure {
     color: #25252c;
     background-color: #e4e4ec;
     text-decoration: none;
-    border-top: 1px solid #cdcddd;
     transition: all 0.3s ease;
 }
-.aside-menu a:hover {
+
+.aside-menu > ul > li + li > a  {
+    
+    border-top: 1px solid #cdcddd;
+}
+.aside-menu > ul > li:hover > a {
     color: #fff;
     background-color: #fd8300;
+
+}
+.aside-menu> ul > li > a:before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    transition: all .5s ease;
+
+}
+.aside-menu > ul > li:hover > a:before {
+    top: 15px;
+    border-color: #fff;
+    transform: rotate(45deg);
+}
+.aside-menu li:hover .sub-menu {
+    display: block;
+}
+.sub-menu {
+    display: none;
 }
 
 .sub-menu a {
@@ -397,5 +468,6 @@ figure {
     padding: 13.5px 0;
 
 }
+
 
 
