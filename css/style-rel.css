@@ -272,12 +272,14 @@ p.prop-text {
     border-collapse: collapse;
  }
  
- th, td {
+ td {
     
-    padding: 15px 20px;
+    padding: 8.5px 20px;
     text-align: left;
 }
  .table-price th {
+     padding: 13px 20px;
+     text-align: left;
     font-size: 14px;
     color: #fff;
     background-color: #1f1f56;
@@ -296,9 +298,11 @@ p.prop-text {
 .table-price tr:first-child td {
     border-top: 0;
 }
-.cost {
+.table-price th:last-child,
+.table-price td:last-child {
     text-align: right;
 }
+
 tbody tr {
     color: #666;
      background-color: #e4e4ec;
@@ -307,6 +311,7 @@ tbody tr {
  tbody tr:hover {
      color: #fff;
      background-color:#fd8300;
+     cursor: pointer;
  }
  
  .content {
