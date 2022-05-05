@@ -32,6 +32,10 @@ a {
     margin: 0 auto;
     max-width: 960px; 
 }
+header {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
 
 .header {
     padding: 15.5px 0;
@@ -199,6 +203,7 @@ background-position: -35px -22px;
     background-color: #fd8300;
     color: #fff;
 }
+
 .proposition {
     text-align: center;
     background: #292523 url(../img/backround.jpg) center/cover;
@@ -207,7 +212,6 @@ background-position: -35px -22px;
 }
 .proposition p {
     margin: 0;
-    padding: 8px 0;
 
 }
 .prop-title {
@@ -259,18 +263,17 @@ p.prop-text {
 
  }
  
- .table-price{
+
+.table-price table {
     border-radius: 3px;
     overflow: hidden;
- }
-.table-price table {
     width: 100%;
     margin: 25px 0;
     border-collapse: collapse;
  }
  
  th, td {
-     
+    
     padding: 15px 20px;
     text-align: left;
 }
@@ -283,19 +286,27 @@ p.prop-text {
     font-family: "Roboto Slab";
  }
 
- .info-table td {
+ .table-price td {
     font-size: 14px;
     line-height: 24px;
     color: #666;
-    font-family: "Arial";
     background-color: #e4e4ec;
+    border: 1px solid #cdcddd;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
     
+ } 
+ .cost {
+     text-align: right;
+ }
+ tr {
+     transition: all 0.2s ease;
+ }
+ tr:hover {
+     color:#fd8300;
  }
  
-
- .home {
-     margin: 0;
- }
  .content {
     font-size: 14px;
     line-height: 24px;
@@ -303,6 +314,7 @@ p.prop-text {
 
  }
  .content-price {
+     margin: 0;
     font-size: 14px;
     color: #666666;
     font-family: "Arial";
@@ -348,7 +360,9 @@ p.prop-text {
  }
  
 .home p { 
+    margin: 0;
     font-size: 13px;
+    line-height: 18px;
     color: #9999a6;
 }
 
@@ -382,7 +396,6 @@ figure {
 .aside-menu a {
     display: block;
     padding: 10px 15px;
-    border: 1px solid #aaa;
     font-size: 14px; 
     line-height: 24px;
     color: #25252c;
