@@ -289,22 +289,23 @@ p.prop-text {
  .table-price td {
     font-size: 14px;
     line-height: 24px;
-    color: #666;
-    background-color: #e4e4ec;
     border: 1px solid #cdcddd;
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
     
- } 
- .cost {
-     text-align: right;
- }
- tr {
+} 
+.cost {
+    text-align: right;
+}
+tbody tr {
+    color: #666;
+     background-color: #e4e4ec;
      transition: all 0.2s ease;
  }
- tr:hover {
-     color:#fd8300;
+ tbody tr:hover {
+     color: #fff;
+     background-color:#fd8300;
  }
  
  .content {
