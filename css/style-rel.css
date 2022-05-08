@@ -298,6 +298,7 @@ p.prop-text {
 .table-price tr:first-child td {
     border-top: 0;
 }
+
 .table-price th:last-child,
 .table-price td:last-child {
     text-align: right;
@@ -481,8 +482,55 @@ figure {
 .coppy p {
     margin: 0;
     padding: 13.5px 0;
+}
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+.all-contacts h2 {
+    font-size: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.office h3,
+.consultation h3,
+.detalis h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.office p,
+.consultation p,
+.detalis p {
+    font-size: 14px;
+    color: #666666;
+}
+.tel {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #25252c;
 
 }
+.mail {
+    font-size: 16px;
+    text-decoration: underline;
+    color: #25252c;
+}
+.detalis {
+padding-right: 81px;
+}
+.detalis p {
+    line-height: 24px;
+}
+.consultation {
+    padding-right: 50px;
+}
+
+
 
 
 
