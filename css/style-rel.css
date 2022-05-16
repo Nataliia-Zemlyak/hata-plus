@@ -532,20 +532,24 @@ padding-right: 81px;
 
 
 
+
 .location iframe {
     width: 465px;
     height: 300px;
+    border: none;
 }
 .location {
-    margin: 40px 0;
+    margin: 0;
 }
 
 .feedback {
-    margin: 23px 0;
+    margin: 0;
     width: 48%;
 }
 .feedback input,
 .feedback textarea {
+    box-sizing: border-box;
+    padding-left: 16px;
     font-size: 13px;
     line-height: 21px;
     color: #9999a6;
@@ -555,6 +559,11 @@ padding-right: 81px;
     background-color: #fff;
     border: 1px solid #c5c5d4;
 }
+.feedback textarea {
+    max-width: 100%;
+    max-height: 106px;
+}
+
 
 .connection h3 {
     font-size: 14px;
@@ -562,6 +571,7 @@ padding-right: 81px;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
+
 
 .form-menu,
 .flex {
