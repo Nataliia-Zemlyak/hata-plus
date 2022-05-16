@@ -620,9 +620,10 @@ padding-right: 81px;
 }
 .checkbox {
     margin-top: 3%;
+    margin-right: 43px;
 }
 .flex label {
-    margin-right: 30px;
+
     font-size: 13px;
     color: #666666;
     font-family: "Arial";
