@@ -539,7 +539,7 @@ padding-right: 81px;
     border: none;
 }
 .location {
-    margin: 0;
+    margin: 17px 0 40px;
 }
 
 .feedback {
@@ -563,6 +563,8 @@ padding-right: 81px;
     max-width: 100%;
     max-height: 106px;
 }
+
+
 
 
 .connection h3 {
