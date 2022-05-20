@@ -550,6 +550,7 @@ padding-right: 81px;
 .feedback textarea {
     box-sizing: border-box;
     padding-left: 16px;
+    padding-bottom: 5px;
     font-size: 13px;
     line-height: 21px;
     color: #9999a6;
@@ -561,7 +562,6 @@ padding-right: 81px;
 }
 .feedback textarea {
     max-width: 100%;
-    max-height: 106px;
 }
 
 
@@ -593,17 +593,74 @@ padding-right: 81px;
     height: 40px;
     
 }
-.text{
-    height: 106px;
-    width: 100%;
-    
-}
+
 .topic-ms {
     margin-bottom: 10px;
     height: 40px;
     width: 100%;
 
 }
+.text {
+    resize: vertical;
+    width: 100%;
+    max-width: 462px;
+    min-height: 106px;
+}
+
+.textarea {
+    padding-top: 5px;
+    font-size: 13px;
+    padding-top: 11px;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
+    
+}
+.check-box {
+    visibility: hidden;
+    position: absolute;
+    line-height: 21px;
+}
+.check-box + label {
+    position: relative;
+    padding: 8px 25px;
+    margin-left: 30px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+}
+
+.check-box + label:before, 
+.check-box + label:after {
+    content: "";
+    position: absolute;
+}
+.check-box + label:after {
+    left: 6px;
+    top: 11px;
+    
+}
+.check-box:checked + label:after {
+    width: 4px;
+    height: 9px;
+    border-bottom: 2px solid #1f1f56;
+    border-right: 2px solid #1f1f56;
+    transform: rotate(45deg);
+}
+.check-box + label:before {
+    left: 0;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+
+
+
+
 .cta2 {
     text-align: right;
 }
