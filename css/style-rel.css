@@ -605,6 +605,7 @@ padding-right: 81px;
     width: 100%;
     max-width: 462px;
     min-height: 106px;
+    padding: 7px;
 }
 
 .textarea {
