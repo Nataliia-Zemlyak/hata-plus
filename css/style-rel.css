@@ -31,6 +31,9 @@ a {
 .wrapper {
     margin: 0 auto;
     max-width: 960px; 
+    padding: 0 15px;
+    
+    
 }
 .header-shadow {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
@@ -168,18 +171,8 @@ background-position: -35px -22px;
     height: 19px;
     background: url(../img/sprite.png) no-repeat -55px -21px;
 }
-.stick {
-    position: relative;
-}
-.stick:before {
-    content: '';
-    position: absolute;
-    right: -18px;
-    top: 15px;
-    width: 1px;
-    height: 51px;
-    background-color: #e4e4ec;
-}
+
+
 
 
 .skype {
@@ -242,7 +235,9 @@ p.prop-text {
  }
  .main {
     flex-wrap: wrap-reverse;
-     padding: 35px 0 45px;
+     padding-top: 35px;
+     padding-bottom: 35px;
+
  }
  .main-info {
     
@@ -264,21 +259,27 @@ p.prop-text {
  .main-info h1,
  .main-price h1 {
 
-     margin-top: 5px;
+    padding-top: 20px;
     font-size: 30px;
+    line-height: 30px;
+    text-align: center;
     
  }
  .main-info h2,
  .main-price h2 {
     font-size: 24px;
  }
- 
+
+ .table-price {
+
+    overflow-x: scroll;
+ }
+
 
 .table-price table {
-    border-radius: 3px;
-    overflow: hidden;
-    width: 100%;
     margin: 25px 0;
+    width: 100%;
+    border-radius: 3px;
     border-collapse: collapse;
  }
  
@@ -312,6 +313,7 @@ p.prop-text {
 .table-price th:last-child,
 .table-price td:last-child {
     text-align: right;
+    min-width: 63px;
 }
 
 tbody tr {
@@ -326,7 +328,7 @@ tbody tr {
  }
  
  .content {
-    text-align: center;
+    
     font-size: 14px;
     line-height: 24px;
     color: #666666;
@@ -471,9 +473,9 @@ figure {
     background-color: #ededf5;
 }
 .footer-menu {
-    text-align: center;
-    margin: 10px 0;
     
+    margin: 10px 0;
+    padding: 0;
     list-style: none;
     
 }
@@ -718,8 +720,7 @@ padding-right: 81px;
 
 }
 
-.popular-projects {
-    
+.popular-projects h2 {
     text-align: center;
 }
 
@@ -727,12 +728,19 @@ padding-right: 81px;
 
 
 
+@media screen and (min-width: 974px) {
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 
 @media screen and (min-width: 940px) {
     .content {
         text-align: left;
     }
-    .menu {
+    .main {
         flex-wrap: nowrap;
         
     }
@@ -746,6 +754,12 @@ padding-right: 81px;
     .main-price {
         max-width: 960px;
     }
+    .main-info h1,
+    .main-price h1 {
+
+    padding-top: 0;
+ }
+
 }
 @media screen and (min-width: 950px ){
     .footer-menu {
@@ -766,7 +780,7 @@ padding-right: 81px;
     }
 }
 @media screen and (min-width: 960px ) {
-    .popular-projects {
+    .popular-projects h2 {
         text-align: left;
     }
 }
@@ -776,6 +790,33 @@ padding-right: 81px;
     }
     
     
+}
+@media screen and (min-width: 713px) {
+
+    .stick {
+        position: relative;
+    }
+    .stick:before {
+        content: '';
+        position: absolute;
+        right: -18px;
+        top: 15px;
+        width: 1px;
+        height: 51px;
+        background-color: #e4e4ec;
+    }
+}
+
+@media screen and (min-width: 346px) {
+
+.main-info h1,
+ .main-price h1 {
+
+    padding-top: 0;
+    font-size: 30px;
+    text-align: left;
+    
+ }
 }
 
 
