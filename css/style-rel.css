@@ -250,7 +250,7 @@ p.prop-text {
 
  }
  .main-price {
-     width: 100%;
+     max-width: 960px;
 
  }
  .main-info h1,
