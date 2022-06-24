@@ -47,7 +47,7 @@ a {
 }
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 28px;
     row-gap: 28px;
@@ -67,7 +67,8 @@ a {
     margin: 0 14px;
 }
 .menu {
-    display: inline;
+    display: none;
+    
 }
 .menu a {
     letter-spacing: 2px;
@@ -90,6 +91,8 @@ a {
 }
 .social a {
     display: block;
+    display: flex;
+    align-items: flex-end;
     background: url(../img/sprite.png) no-repeat;
 }
 a.fb {
@@ -183,7 +186,7 @@ background-position: -35px -22px;
     text-decoration: none;
 }
 .cta {
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -238,28 +241,35 @@ p.prop-text {
      font-size: 40px;
  }
  .main {
+    flex-wrap: wrap-reverse;
      padding: 35px 0 45px;
  }
  .main-info {
-     max-width: 713px;
+    
+     width: 100%;
 
  }
  .main-price {
-     max-width: 960px;
+     width: 100%;
 
  }
  .main-info h1,
- .main-info h2 {
+ .main-info h2,
+ .main-price h1,
+ .main-price h2 {
     color: #24242b;
     font-family: "Roboto Slab";
 
  }
- .main-info h1 {
+ .main-info h1,
+ .main-price h1 {
+
      margin-top: 5px;
     font-size: 30px;
     
  }
- .main-info h2 {
+ .main-info h2,
+ .main-price h2 {
     font-size: 24px;
  }
  
@@ -316,12 +326,14 @@ tbody tr {
  }
  
  .content {
+    text-align: center;
     font-size: 14px;
     line-height: 24px;
     color: #666666;
 
  }
  
+ .main-price a,
  .main-info a {
     font-size: 14px;
     line-height: 24px;
@@ -329,11 +341,13 @@ tbody tr {
     font-weight: bold;
     transition: all 0.2s ease;  
  }
+ .main-price a:hover,
  .main-info a:hover {
      text-decoration: none;
  }
+ 
 
- .home {
+.home {
      position: relative;
      margin: 0;
      display: flex;
@@ -373,6 +387,8 @@ figure {
     margin: 0;
 }
 .aside-menu {
+    
+    
     position: sticky;
     top: 35px;
     border-radius: 3px;
@@ -380,6 +396,7 @@ figure {
 }
 
 .sidebar {
+    flex: 0 0 100%;
     min-width: 219px;
 }
 
@@ -454,9 +471,9 @@ figure {
     background-color: #ededf5;
 }
 .footer-menu {
-
+    text-align: center;
     margin: 10px 0;
-    padding: 0;
+    
     list-style: none;
     
 }
@@ -485,9 +502,10 @@ figure {
 }
 .contacts {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .all-contacts h2 {
+    text-align: center;
     font-size: 24px;
     color: #24242b;
     font-weight: 700;
@@ -698,6 +716,66 @@ padding-right: 81px;
     color: #666666;
     font-family: "Arial";
 
+}
+
+.popular-projects {
+    
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (min-width: 940px) {
+    .content {
+        text-align: left;
+    }
+    .menu {
+        flex-wrap: nowrap;
+        
+    }
+    .sidebar {
+        flex: 0 0 219px;
+        width: 219px;
+    }
+    .main-info {
+        max-width: 713px;
+    }
+    .main-price {
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 950px ){
+    .footer-menu {
+        padding: 0;
+        text-align: left;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .all-contacts h2 {
+        text-align: left;
+    }
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+@media screen and (min-width: 960px ) {
+    .popular-projects {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 770px) {
+    .menu {
+        display: block;
+    }
+    
+    
 }
 
 
