@@ -891,6 +891,7 @@ figure {
     top: 55px;
     background-color: #e4e4ec;
     z-index: 1;
+    
 }
 
 .menu a {
@@ -903,8 +904,9 @@ figure {
     
 }
 .menu li {
-    display: flex;
-    flex-direction: column;
+     display: flex;
+     flex-direction: column;
+     border-top: 1px solid #cdcddd;
 }
 .active-burger {
     display: block;
