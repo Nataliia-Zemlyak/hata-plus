@@ -720,6 +720,7 @@ figure {
 
     font-size: 13px;
     color: #666666;
+    top: 3px;
     font-family: "Arial";
 
 }
@@ -727,9 +728,6 @@ figure {
 .popular-projects h2 {
     text-align: center;
 }
-
-
-
 
 
 
