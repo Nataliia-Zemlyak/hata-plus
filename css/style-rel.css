@@ -865,21 +865,14 @@ figure {
     border-radius: 5px;
 }
 .menu {
-    display: block;
     
-}
-.menu ul {
+    
     display: flex;
-    margin: 0;
     position: absolute;
-   
-    left: 0;
-    right: 0;
     top: 55px;
     background-color: #e4e4ec;
-    z-index: 1;
-    row-gap: 0;
 }
+
 .menu a {
     display: inline-block;
     width: 100%;
