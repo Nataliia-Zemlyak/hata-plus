@@ -851,37 +851,7 @@ figure {
 
 
 
-@media screen and (max-width: 800px){
-    .hamburger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
-.hamburger span {
-    margin: 4px 0;
-    width: 35px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 5px;
-}
-.menu {
-    
-    
-    display: flex;
-    position: absolute;
-    top: 55px;
-    background-color: #e4e4ec;
-}
 
-.menu a {
-    display: inline-block;
-    width: 100%;
-    padding: 10px 0;
-    color: #25252c;
-    line-height: 24px;
-    font-weight: 700;
-}
-}
 
 
 
