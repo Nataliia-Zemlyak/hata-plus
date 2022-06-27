@@ -552,13 +552,16 @@ figure {
 
 
 
-
+.connection {
+    width: 96%;
+}
 .location iframe {
-    width: 304px;
-    height: 245px;
+    width: 100%;
+    height: 300px;
     border: none;
 }
 .location {
+    width: 48%;
     margin: 17px 0 40px;
 }
 
@@ -739,6 +742,62 @@ figure {
 }
 
 
+@media screen and (max-width: 760px) {
+    .form-menu {
+        flex-direction: column;
+    }
+    .form-menu label {
+        width: 100%;
+        padding-bottom: 10px;
+
+    }
+    .location{
+        width: 100%;
+        
+    }
+    .feedback {
+        width: 100%;
+    }
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media screen and (min-width: 713px) {
+
+    .stick {
+        position: relative;
+    }
+    .stick:before {
+        content: '';
+        position: absolute;
+        right: -18px;
+        top: 15px;
+        width: 1px;
+        height: 51px;
+        background-color: #e4e4ec;
+    }
+}
+@media screen and (min-width: 960px ) {
+    .popular-projects h2 {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 950px ){
+    .footer-menu {
+        padding: 0;
+        text-align: left;
+    }
+    .row {
+    
+        justify-content: space-between;
+    }
+    .all-contacts h2 {
+        text-align: left;
+    }
+   
+}
 @media screen and (min-width: 940px) {
     .content {
         text-align: left;
@@ -764,49 +823,6 @@ figure {
  }
 
 }
-@media screen and (min-width: 950px ){
-    .footer-menu {
-        padding: 0;
-        text-align: left;
-    }
-    .row {
-    
-        justify-content: space-between;
-    }
-    .all-contacts h2 {
-        text-align: left;
-    }
-   
-}
-@media screen and (min-width: 960px ) {
-    .popular-projects h2 {
-        text-align: left;
-    }
-}
-
-@media screen and (min-width: 713px) {
-
-    .stick {
-        position: relative;
-    }
-    .stick:before {
-        content: '';
-        position: absolute;
-        right: -18px;
-        top: 15px;
-        width: 1px;
-        height: 51px;
-        background-color: #e4e4ec;
-    }
-}
-@media screen and (max-width: 499px) {
-
-.contacts {
-    display: flex;
-    justify-content: flex-start;
-
-}
-}
 
 @media screen and (min-width: 500px) {
 
@@ -819,27 +835,19 @@ figure {
     
  }
 }
+@media screen and (max-width: 499px) {
 
-@media screen and (min-width: 440px) {
-
-
-.location iframe {
-    width: 465px;
-    height: 300px;
-}
-}
-
-@media screen and (max-width: 973px) {
-    .form-menu {
-        flex-direction: column;
-    }
-    .form-menu label {
-        width: 100%;
-        padding-bottom: 10px;
-
-    }
+.contacts {
+    display: flex;
+    justify-content: flex-start;
 
 }
+}
+
+
+
+
+
 
 
 
