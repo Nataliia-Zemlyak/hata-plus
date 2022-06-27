@@ -753,6 +753,7 @@ figure {
     }
     .location{
         width: 100%;
+        margin: 0;
         
     }
     .feedback {
@@ -761,6 +762,12 @@ figure {
     .flex {
         flex-direction: column;
         align-items: center;
+    }
+    .connection h3 {
+        text-align: center;
+    }
+    .check-box + label {
+        margin-left: 0;
     }
     
 }
@@ -844,6 +851,16 @@ figure {
 }
 }
 
+@media screen and (max-width: 465px) {
+    .row {
+        row-gap: 0;
+    }
+    .home {
+        margin: 10px;
+    }
+
+}
+
 
 
 
@@ -855,7 +872,7 @@ figure {
     .hamburger {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    
 }
 .hamburger span {
     margin: 4px 0;
@@ -865,20 +882,32 @@ figure {
     border-radius: 5px;
 }
 .menu {
+    display: none;
+    position: absolute;
     
-    
-   
+    margin: 0;
+    left: 0;
+    right: 0;
     top: 55px;
     background-color: #e4e4ec;
+    z-index: 1;
 }
 
 .menu a {
-    display: inline-block;
-    width: 100%;
-    padding: 10px 0;
+    display: block;
+    
+    padding: 10px 20px;
     color: #25252c;
     line-height: 24px;
     font-weight: 700;
+    
+}
+.menu li {
+    display: flex;
+    flex-direction: column;
+}
+.active-burger {
+    display: block;
 }
 }
 
