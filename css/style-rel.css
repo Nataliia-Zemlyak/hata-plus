@@ -61,7 +61,7 @@ a {
 }
 
 .header ul {
-    margin: 0 -14px;
+    margin: 0;
     padding-left: 0;
     list-style: none;
 }
@@ -910,7 +910,6 @@ figure {
     display: block;
 }
 }
-
 
 
 
