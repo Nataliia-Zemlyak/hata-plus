@@ -764,7 +764,7 @@ figure {
     }
     
 }
-@media screen and (max-width: 761px) {
+@media screen and (max-width: 781px) {
     .flex {
         flex-direction: column;
         align-items: center;
